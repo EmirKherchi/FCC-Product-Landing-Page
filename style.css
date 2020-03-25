@@ -1,0 +1,69 @@
+body {
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 25px;
+}
+i,
+strong {
+  color: rgb(57, 18, 90);
+}
+/*Header*/
+
+#nav-bar {
+  position: static;
+  margin-left: 20px;
+  margin-bottom: 5%;
+}
+.navbar-brand {
+  margin-right: 8%;
+}
+.navbar-brand i {
+  margin-right: 18%;
+}
+.navbar-nav .nav-item {
+  margin-right: 10%;
+}
+
+/*form*/
+
+form #email {
+  width: 250px;
+  display: block;
+  margin: auto;
+  margin-bottom: 25px;
+}
+/*Features*/
+
+#features {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-left: 10%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  flex-direction: column;
+
+  flex-wrap: nowrap;
+
+  justify-content: flex-start;
+
+  align-content: flex-start;
+
+  align-items: flex-start;
+}
+.features-item {
+  display: inline-flex;
+}
+.features-item__text {
+  padding-left: 100px;
+}
+
+.features-item h3 {
+  margin-bottom: -20px;
+}
+
+.features-item__logo {
+  margin-top: 18px;
+}

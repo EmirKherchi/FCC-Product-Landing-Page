@@ -2,60 +2,98 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/7fd7f73f67.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>FCC: Product Landing Page</title>
 </head>
 
 <body>
+    <p>Position 15</p>
     <header class="container-fluid" id="header">
-
-
-        
-
         <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-light">
-            <div id="header-img">
-                <i class="fas fa-mug-hot"></i>
-                <h1>Super Mug</h1>
-            </div>
+            <a class="navbar-brand" href="#">
+                <h1><i class="fas fa-mug-hot"></i>Supa Mug</h1>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
+                        <a class="nav-link" href="#">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#pricing">Pricing</a>
+                        <a class="nav-link" href="#">Pricing</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <--! User Story #12 !-->
     </header>
 
     <main>
-        <div id="description"></div>
+        <div class="container text-center" id="description">
+            <h2>
+                Not much to say<br />
+                Just some <strong>F*****g</strong> awesome Mug
+            </h2>
+        </div>
+
+        <div id="features" class="container">
+
+            <div class="features-item">
+
+                <div class="features-item__logo">
+                    <h2><i class="fas fa-kiwi-bird"></i></h2>
+                </div>
+                <div class="features-item__text">
+                    <p>
+                        <h3>At your image</h3><br>
+                        Own it ! it's your's choose a pics or an illustration from our crazy
+                        mind
+                    </p>
+                </div>
+            </div>
+
+            <div class="features-item">
+
+                <div class="features-item__logo">
+                    <h2><i class="far fa-hand-spock"></i></h2>
+                </div>
+                <div class="features-item__text">
+                    <p>
+                        <h3>Footmade, of course</h3><br>
+                        Made by our hobbit's feet ! it will be unique, wash it first, because you know...the smell !
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
         <div id="video"></div>
-        <form class="container text-center" id="form">
-            <label id="email-label" for="email">Email</label>
-            <input required type="email" class="form-control" id="email" placeholder="Enter your email">
-            <input type="submit" id="submit" class="btn btn-dark">
+        <form action="https://www.freecodecamp.com/email-submit" class="container text-center" id="form">
+            <label id="email-label" for="email"></label>
+            <input required type="email" class="form-control" id="email" placeholder="Enter your email" />
+            <input type="submit" id="submit" class="btn btn-dark" />
         </form>
     </main>
     <footer></footer>
-
 </body>
 
 </html>
