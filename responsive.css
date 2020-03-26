@@ -1,0 +1,30 @@
+
+
+
+header{
+    background-color: #ddd;
+    position: relative;
+    height: 8%;
+    z-index: 1000;
+  }
+
+  .features-item__text{
+      padding-left:20px;
+  }
+  .navbar-brand i {
+    margin-right: 10%;
+  }
+
+  #video{
+    width: 280px;
+  }
+
+
+#pricing{ 
+    flex-direction: column;  
+  }
+
+.card{
+    margin-bottom: 15px;
+}
+

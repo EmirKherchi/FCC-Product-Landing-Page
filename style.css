@@ -1,34 +1,59 @@
+
 body {
   box-sizing: border-box;
+}
+#header-img{
+  display: none;
 }
 h1 {
   font-size: 25px;
 }
 i,
 strong {
-  color: rgb(57, 18, 90);
+  color: #6610f2;
+}
+
+.btn{
+  background-color:#6610f2;
+  border: none;
+}
+.btn:hover{
+  background-color:#6f42c1;
 }
 /*Header*/
 
 #nav-bar {
-  position: static;
   margin-left: 20px;
-  margin-bottom: 5%;
+  padding-top: 1%;
+}
+header{
+  background-color: #ddd;
+  position: fixed;
+  height: 10%;
+  z-index: 1000;
 }
 .navbar-brand {
-  margin-right: 8%;
-}
-.navbar-brand i {
   margin-right: 18%;
 }
+.navbar-brand i {
+  margin-right: 14%;
+}
 .navbar-nav .nav-item {
-  margin-right: 10%;
+  margin-right: 15%;
+}
+
+/*description*/
+main{
+  padding-top: 15%;
 }
 
 /*form*/
-
+form{
+  margin-bottom: 8%;
+  
+}
 form #email {
-  width: 250px;
+  width: 280px;
   display: block;
   margin: auto;
   margin-bottom: 25px;
@@ -36,25 +61,24 @@ form #email {
 /*Features*/
 
 #features {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 20%;
+  margin-bottom: 8%;
   padding-left: 10%;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-
   flex-direction: column;
-
   flex-wrap: nowrap;
-
   justify-content: flex-start;
-
   align-content: flex-start;
-
   align-items: flex-start;
 }
 .features-item {
   display: inline-flex;
+  margin-bottom: 8%;
+}
+
+.features-item i{
+  height: 32px;
+  width: 32px;
 }
 .features-item__text {
   padding-left: 100px;
@@ -66,4 +90,32 @@ form #email {
 
 .features-item__logo {
   margin-top: 18px;
+}
+
+/*Vidéo*/
+
+.video{
+  margin-bottom: 8%;
+}
+/*card*/
+
+#pricing{
+  margin-bottom: 12%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  z-index: -1000;
+}
+.card{
+ width: 250px;
+ height: 350px;
+ padding-top: 8%;
+ margin: 0 20px;
+}
+
+.card h5{
+  padding: 10% 0 15% 0;
+  color: #6610f2;
 }
