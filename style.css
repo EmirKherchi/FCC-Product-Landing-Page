@@ -22,12 +22,14 @@ strong {
 }
 /*Header*/
 
+
+
 #nav-bar {
   margin-left: 20px;
   padding-top: 1%;
 }
 header{
-  background-color: #ddd;
+  background-color: #eee;
   position: fixed;
   height: 10%;
   z-index: 1000;
@@ -45,6 +47,14 @@ header{
 /*description*/
 main{
   padding-top: 15%;
+}
+.fword{
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+#description{
+  overflow: hidden;
 }
 
 /*form*/
@@ -93,13 +103,50 @@ form #email {
 }
 
 /*Vidéo*/
-
+.arrow{
+  box-shadow: 0px 6px 6px -6px rgba(163,163,163);
+  width: 50%;
+  
+}
+#arrow{
+  cursor: pointer;
+  font-size: 3rem;
+  margin-bottom: 1%;
+  animation: slow 1500ms ease-in-out infinite;
+}
+.show{
+  animation: show 1500ms ease-in ;
+}
+.invisible{
+  display: none;
+}
 .video{
   margin-bottom: 8%;
 }
+@keyframes slow{
+  from{
+    transform: translateY(-60px) ;
+    opacity: 0;
+    
+  }to{
+    transform: translateY(-0px) ;
+    opacity:1;
+  }
+}
+@keyframes show{
+ from{
+  opacity: 0; 
+  
+ }to{
+  opacity: 1; 
+  
+ }
+}
+
 /*card*/
 
 #pricing{
+  margin-top: 8%;
   margin-bottom: 12%;
   display: flex;
   flex-direction: row;
