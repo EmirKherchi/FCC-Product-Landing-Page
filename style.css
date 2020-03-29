@@ -106,16 +106,15 @@ form #email {
 .arrow{
   box-shadow: 0px 6px 6px -6px rgba(163,163,163);
   width: 50%;
-  
+  cursor: pointer;
 }
 #arrow{
-  cursor: pointer;
   font-size: 3rem;
   margin-bottom: 1%;
   animation: slow 1500ms ease-in-out infinite;
 }
 .show{
-  animation: show 1500ms ease-in ;
+ animation:  show 1500ms ease-in ;
 }
 .invisible{
   display: none;

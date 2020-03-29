@@ -1,25 +1,6 @@
 
 
-// const f = document.querySelectorAll('.fword');
 
-
-// for(let i = 0; i < f.length; i++ ){
-//     const fuck = f[i]; 
-
-
-//     fuck.addEventListener('click',function(e){
-//         e.target.innerHTML="Fucking";
-
-//         setTimeout(function(){
-//             e.target.innerHTML="F*****g";
-//         },1000);
-
-
-    
-  
-// },);
-
-// };
 
 // Wrap every letter in a span
 const textWrapper = document.querySelector('.description .fword');
@@ -43,7 +24,7 @@ anime.timeline({loop: true})//animation ajax
 
   //arrow video show
 
-const arrow = document.getElementById('arrow');
+const arrow = document.querySelector('.arrow');
 
 const video = document.querySelector('.video');
 
